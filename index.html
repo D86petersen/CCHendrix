@@ -27,6 +27,7 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -36,14 +37,19 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-video-bg"></div>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Professional Construction Services</h1>
-                <p class="hero-subtitle">Expert cleanup, hauling, and power washing solutions for your construction needs</p>
+                <h1 class="hero-title">The Final Clean, Done Right.</h1>
+                <p class="hero-subtitle">Your trusted partner for professional construction cleanup, debris hauling, and high-power pressure washing services. We leave your site spotless and ready.</p>
+                <div class="availability-badge">
+                    <span class="badge-icon">🕐</span>
+                    <span class="badge-text">Available 24/7 • Emergency Services</span>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">Our Services</a>
-                    <a href="#contact" class="btn btn-secondary">Get a Quote</a>
+                    <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
                 </div>
             </div>
         </div>
@@ -128,6 +134,14 @@
                             <div class="feature-icon">✓</div>
                             <div class="feature-text">Competitive Pricing</div>
                         </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🕐</div>
+                            <div class="feature-text">24/7 Availability</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-text">Emergency Response</div>
+                        </div>
                     </div>
                 </div>
                 <div class="about-image">
@@ -142,6 +156,94 @@
                                 </linearGradient>
                             </defs>
                         </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work</h2>
+                <p class="section-subtitle">See the difference our professional services make</p>
+            </div>
+
+            <!-- Before/After Comparisons -->
+            <div class="before-after-section">
+                <h3 class="subsection-title">Before & After Transformations</h3>
+                <div class="before-after-grid">
+                    <!-- Before/After Image 1 -->
+                    <div class="before-after-item">
+                        <img src="" alt="Before and after construction cleanup">
+                        <p class="comparison-caption">Construction Site Cleanup - Downtown Office Building</p>
+                    </div>
+
+                    <!-- Before/After Image 2 -->
+                    <div class="before-after-item">
+                        <img src="/CCHendrix/img/att.6I-vLeZCypbuQEeHWPH_ykL3b2inBfBF4KxMBQ0mZvU.JPG" alt="Before and after power washing">
+                        <p class="comparison-caption">Exterior Power Washing - Commercial Property</p>
+                    </div>
+
+                    <!-- Before/After Image 3 -->
+                    <div class="before-after-item">
+                        <img src="https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Before+%26+After+Hauling" alt="Before and after hauling">
+                        <p class="comparison-caption">Debris Removal - Residential Construction Site</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work in Progress Gallery -->
+            <div class="work-progress-section">
+                <h3 class="subsection-title">Our Team in Action</h3>
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="cleanup">Cleanup</button>
+                    <button class="filter-btn" data-filter="hauling">Hauling</button>
+                    <button class="filter-btn" data-filter="washing">Power Washing</button>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="cleanup">
+                        <img src="/CCHendrix/img/att.Zt-b1YKuWaZ3m6K1OwkaVu6Mkm2I-SZ4qkbh6K1FjJM.JPG">
+                            <h4>Construction Cleanup</h4>
+                            <p>Post-construction debris removal</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="hauling">
+                        <img src="/CCHendrix/img/att.wI9pOtKlPHto2VBAFRDA7SG0smqJdergiHu8ejf5aC8.JPG" alt="Hauling service in action">
+                        <div class="gallery-overlay">
+                            <h4>Hauling Services</h4>
+                            <p>Heavy debris removal and transport</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="washing">
+                        <img src="/CCHendrix/img/att.Jzja76aASkxC1ekeLrl_66bH7RyS9LScLww3cDL05s0.JPG" alt="Power washing in action">
+                        <div class="gallery-overlay">
+                            <h4>Power Washing</h4>
+                            <p>Professional pressure cleaning</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="cleanup">
+                        <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=Site+Preparation" alt="Site preparation">
+                        <div class="gallery-overlay">
+                            <h4>Site Preparation</h4>
+                            <p>Getting the site ready for occupancy</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="washing">
+                        <img src="https://via.placeholder.com/400x300/06b6d4/ffffff?text=Exterior+Washing" alt="Exterior washing">
+                        <div class="gallery-overlay">
+                            <h4>Exterior Washing</h4>
+                            <p>Building facade restoration</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="hauling">
+                        <img src="https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Debris+Transport" alt="Debris transport">
+                        <div class="gallery-overlay">
+                            <h4>Debris Transport</h4>
+                            <p>Efficient waste management</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,7 +266,7 @@
                             </svg>
                         </div>
                         <h4>Email Us</h4>
-                        <p>info@cchendrix.com</p>
+                        <p>chendrix@cchendrix.com</p>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">
@@ -173,7 +275,7 @@
                             </svg>
                         </div>
                         <h4>Call Us</h4>
-                        <p>(555) 123-4567</p>
+                        <p>(866) 287-8475</p>
                     </div>
                     <div class="info-card">
                         <div class="info-icon">
@@ -236,18 +338,19 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Info</h4>
-                    <p>Email: info@cchendrix.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: chendrix@cchendrix.com</p>
+                    <p>Phone: (866) 287-8475</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 CCHendrix. All rights reserved.</p>
+                <p>&copy; 2025 CCHendrix. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -169,3 +169,110 @@ window.addEventListener('load', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+// Gallery Filter Functionality
+const filterButtons = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        const filter = button.getAttribute('data-filter');
+        
+        galleryItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+            
+            if (filter === 'all' || category === filter) {
+                item.classList.remove('hidden');
+                item.style.animation = 'fadeInUp 0.5s ease';
+            } else {
+                item.classList.add('hidden');
+            }
+        });
+    });
+});
+
+// Gallery Item Click - Image Modal/Lightbox (Simple version)
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const overlay = item.querySelector('.gallery-overlay');
+        const title = overlay.querySelector('h4').textContent;
+        
+        // Create lightbox
+        const lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+        lightbox.innerHTML = `
+            <div class="lightbox-content">
+                <button class="lightbox-close">&times;</button>
+                <img src="${img.src}" alt="${title}">
+                <div class="lightbox-caption">${title}</div>
+            </div>
+        `;
+        
+        // Add styles
+        lightbox.style.position = 'fixed';
+        lightbox.style.top = '0';
+        lightbox.style.left = '0';
+        lightbox.style.width = '100%';
+        lightbox.style.height = '100%';
+        lightbox.style.background = 'rgba(0, 0, 0, 0.95)';
+        lightbox.style.display = 'flex';
+        lightbox.style.alignItems = 'center';
+        lightbox.style.justifyContent = 'center';
+        lightbox.style.zIndex = '10000';
+        lightbox.style.padding = '20px';
+        
+        const content = lightbox.querySelector('.lightbox-content');
+        content.style.position = 'relative';
+        content.style.maxWidth = '90%';
+        content.style.maxHeight = '90%';
+        
+        const closeBtn = lightbox.querySelector('.lightbox-close');
+        closeBtn.style.position = 'absolute';
+        closeBtn.style.top = '-40px';
+        closeBtn.style.right = '0';
+        closeBtn.style.background = 'none';
+        closeBtn.style.border = 'none';
+        closeBtn.style.color = '#fff';
+        closeBtn.style.fontSize = '40px';
+        closeBtn.style.cursor = 'pointer';
+        closeBtn.style.lineHeight = '1';
+        
+        const lightboxImg = lightbox.querySelector('img');
+        lightboxImg.style.maxWidth = '100%';
+        lightboxImg.style.maxHeight = '80vh';
+        lightboxImg.style.borderRadius = '10px';
+        lightboxImg.style.display = 'block';
+        
+        const caption = lightbox.querySelector('.lightbox-caption');
+        caption.style.color = '#fff';
+        caption.style.textAlign = 'center';
+        caption.style.marginTop = '20px';
+        caption.style.fontSize = '18px';
+        caption.style.fontWeight = '600';
+        
+        document.body.appendChild(lightbox);
+        
+        // Close lightbox
+        const closeLightbox = () => {
+            lightbox.style.opacity = '0';
+            setTimeout(() => lightbox.remove(), 300);
+        };
+        
+        closeBtn.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+        
+        // Add fade in
+        lightbox.style.opacity = '0';
+        lightbox.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => lightbox.style.opacity = '1', 10);
+    });
+});
+
