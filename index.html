@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <div class="background-shapes"></div>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
@@ -30,18 +32,22 @@
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+                <div class="theme-switcher">
+                    <div class="theme-switcher-button"></div>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="blob"></div>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Professional Construction Services</h1>
-                <p class="hero-subtitle">Expert cleanup, hauling, and power washing solutions for your construction needs</p>
-                <div class="hero-buttons">
+                <h1 class="hero-title" data-aos="fade-up">Professional Construction Services</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Expert cleanup, hauling, and power washing solutions for your construction needs</p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
                     <a href="#services" class="btn btn-primary">Our Services</a>
                     <a href="#contact" class="btn btn-secondary">Get a Quote</a>
                 </div>
@@ -55,12 +61,12 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Our Services</h2>
                 <p class="section-subtitle">Comprehensive solutions for all your construction site needs</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="8" y="24" width="48" height="32" rx="2" stroke="currentColor" stroke-width="3"/>
@@ -71,7 +77,7 @@
                     <h3 class="service-title">Construction Cleanup</h3>
                     <p class="service-description">Professional post-construction cleanup services to get your site ready for final inspection and occupancy.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="12" y="28" width="40" height="28" rx="2" stroke="currentColor" stroke-width="3"/>
@@ -84,7 +90,7 @@
                     <h3 class="service-title">Hauling Services</h3>
                     <p class="service-description">Reliable debris removal and hauling services to keep your construction site clean and organized.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 32L28 24L36 32L44 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -103,7 +109,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-right">
                     <h2 class="section-title">About CCHendrix</h2>
                     <p class="about-description">
                         At CCHendrix, we pride ourselves on delivering exceptional construction cleanup, hauling, and power washing services. With years of experience in the industry, our team of professionals is dedicated to ensuring your construction site meets the highest standards of cleanliness and safety.
@@ -130,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
+                <div class="about-image" data-aos="fade-left">
                     <div class="image-placeholder">
                         <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="400" height="500" fill="url(#gradient)"/>
@@ -151,12 +157,12 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">Ready to start your project? Contact us today for a free quote</p>
             </div>
             <div class="contact-content">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right">
                     <div class="info-card">
                         <div class="info-icon">
                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -186,7 +192,7 @@
                         <p>Serving Your Area</p>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
+                <div class="contact-form-wrapper" data-aos="fade-left">
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -225,13 +231,13 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
+                <div class="footer-brand" data-aos="fade-up">
                     <div class="logo">
                         <span class="logo-text">CC<span class="highlight">Hendrix</span></span>
                     </div>
                     <p class="footer-description">Professional construction cleanup, hauling, and power washing services.</p>
                 </div>
-                <div class="footer-links">
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
@@ -240,7 +246,7 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
+                <div class="footer-contact" data-aos="fade-up" data-aos-delay="200">
                     <h4>Contact Info</h4>
                     <p>Email: info@cchendrix.com</p>
                     <p>Phone: (555) 123-4567</p>
@@ -252,6 +258,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
