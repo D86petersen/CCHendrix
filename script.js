@@ -1,10 +1,3 @@
-// Initialize AOS
-AOS.init({
-    duration: 800,
-    once: true,
-    easing: 'ease-in-out',
-});
-
 // Theme Switcher
 const themeSwitcher = document.querySelector('.theme-switcher');
 const body = document.body;
