@@ -41,31 +41,23 @@ mobileMenuToggle.addEventListener('click', () => {
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        mobileMenuToggle.classList.remove('active');
-        navMenu.classList.remove('active');
+        if (navMenu.classList.contains('active')) {
+            mobileMenuToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
     });
-});
-
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
 });
 
 // Active navigation link based on scroll position
 const sections = document.querySelectorAll('section[id]');
+const navbarHeight = document.getElementById('navbar').offsetHeight;
 
 function updateActiveNavLink() {
     const scrollY = window.pageYOffset;
     
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
+        const sectionTop = section.offsetTop - navbarHeight - 20;
         const sectionId = section.getAttribute('id');
         
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
@@ -80,6 +72,7 @@ function updateActiveNavLink() {
 }
 
 window.addEventListener('scroll', updateActiveNavLink);
+window.addEventListener('load', updateActiveNavLink); // Run on load as well
 
 // Smooth scroll for navigation links
 navLinks.forEach(link => {
@@ -89,7 +82,7 @@ navLinks.forEach(link => {
         const targetSection = document.querySelector(targetId);
         
         if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 70;
+            const offsetTop = targetSection.offsetTop - navbarHeight;
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -121,23 +114,8 @@ function showFormMessage(message, type) {
     }
     
     const messageDiv = document.createElement('div');
-    messageDiv.className = `form-message ${type}`;
+    messageDiv.className = `form-message form-message-${type}`;
     messageDiv.textContent = message;
-    messageDiv.style.padding = '15px';
-    messageDiv.style.borderRadius = '8px';
-    messageDiv.style.marginTop = '20px';
-    messageDiv.style.textAlign = 'center';
-    messageDiv.style.fontWeight = '500';
-    
-    if (type === 'success') {
-        messageDiv.style.background = '#d1fae5';
-        messageDiv.style.color = '#065f46';
-        messageDiv.style.border = '2px solid #10b981';
-    } else {
-        messageDiv.style.background = '#fee2e2';
-        messageDiv.style.color = '#991b1b';
-        messageDiv.style.border = '2px solid #ef4444';
-    }
     
     contactForm.parentElement.insertBefore(messageDiv, contactForm.nextSibling);
     

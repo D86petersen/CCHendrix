@@ -9,17 +9,16 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <div class="background-shapes"></div>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <span class="logo-text">CC<span class="highlight">Hendrix</span></span>
+                    CC<span class="highlight">Hendrix</span>
                 </div>
                 <button class="mobile-menu-toggle" id="mobileMenuToggle">
                     <span></span>
@@ -30,6 +29,7 @@
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#showcase" class="nav-link">Showcase</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="theme-switcher">
@@ -41,20 +41,15 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="blob"></div>
-        <div class="hero-overlay"></div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title" data-aos="fade-up">Professional Construction Services</h1>
-                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Expert cleanup, hauling, and power washing solutions for your construction needs</p>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">Quality Construction Services</h1>
+                <p class="hero-subtitle">Your trusted partner for professional cleanup, hauling, and power washing solutions.</p>
+                <div class="hero-buttons">
                     <a href="#services" class="btn btn-primary">Our Services</a>
                     <a href="#contact" class="btn btn-secondary">Get a Quote</a>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
         </div>
     </section>
 
@@ -62,44 +57,30 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive solutions for all your construction site needs</p>
+                <h2 class="section-title">What We Offer</h2>
+                <p class="section-subtitle">Comprehensive, reliable, and efficient solutions tailored to your construction site needs.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-icon">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="8" y="24" width="48" height="32" rx="2" stroke="currentColor" stroke-width="3"/>
-                            <path d="M16 24V16C16 12.6863 18.6863 10 22 10H42C45.3137 10 48 12.6863 48 16V24" stroke="currentColor" stroke-width="3"/>
-                            <circle cx="32" cy="40" r="4" fill="currentColor"/>
-                        </svg>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
                     <h3 class="service-title">Construction Cleanup</h3>
-                    <p class="service-description">Professional post-construction cleanup services to get your site ready for final inspection and occupancy.</p>
+                    <p class="service-description">Post-construction cleanup to ensure your project is spotless, safe, and ready for occupancy.</p>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-icon">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="12" y="28" width="40" height="28" rx="2" stroke="currentColor" stroke-width="3"/>
-                            <circle cx="20" cy="50" r="5" stroke="currentColor" stroke-width="3"/>
-                            <circle cx="44" cy="50" r="5" stroke="currentColor" stroke-width="3"/>
-                            <path d="M52 35H56L60 42V50H56" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                            <path d="M12 38H4V30H12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                        </svg>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </div>
                     <h3 class="service-title">Hauling Services</h3>
-                    <p class="service-description">Reliable debris removal and hauling services to keep your construction site clean and organized.</p>
+                    <p class="service-description">Efficient and responsible debris removal and hauling to keep your site clear and organized.</p>
                 </div>
                 <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-icon">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 32L28 24L36 32L44 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 40L28 32L36 40L44 32" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="3"/>
-                        </svg>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                     </div>
                     <h3 class="service-title">Power Washing</h3>
-                    <p class="service-description">High-quality pressure washing services to restore surfaces and prepare them for finishing work.</p>
+                    <p class="service-description">High-pressure washing for surfaces, exteriors, and equipment, delivering a clean, professional finish.</p>
                 </div>
             </div>
         </div>
@@ -110,12 +91,9 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
-                    <h2 class="section-title">About CCHendrix</h2>
+                    <h2 class="section-title">Why Choose CCHendrix?</h2>
                     <p class="about-description">
-                        At CCHendrix, we pride ourselves on delivering exceptional construction cleanup, hauling, and power washing services. With years of experience in the industry, our team of professionals is dedicated to ensuring your construction site meets the highest standards of cleanliness and safety.
-                    </p>
-                    <p class="about-description">
-                        We understand that every project is unique, which is why we offer customized solutions tailored to your specific needs. From small residential projects to large commercial developments, we have the expertise and equipment to handle jobs of any size.
+                        With years of industry experience, CCHendrix is dedicated to delivering exceptional quality and unparalleled service. We understand the demands of construction projects and are committed to ensuring your site is safe, clean, and ready for the next phase.
                     </p>
                     <div class="about-features">
                         <div class="feature-item">
@@ -137,17 +115,36 @@
                     </div>
                 </div>
                 <div class="about-image" data-aos="fade-left">
-                    <div class="image-placeholder">
-                        <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="500" fill="url(#gradient)"/>
-                            <defs>
-                                <linearGradient id="gradient" x1="0" y1="0" x2="400" y2="500">
-                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                    <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
+                    <div class="image-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Work</h2>
+                <p class="section-subtitle">A glimpse into the quality and dedication we bring to every project.</p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item" data-aos="fade-up">
+                    <img src="https://via.placeholder.com/600x400.png?text=Site+Cleanup" alt="Construction site cleanup">
+                    <div class="showcase-overlay">
+                        <h3>Post-Construction Cleaning</h3>
+                    </div>
+                </div>
+                <div class="showcase-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://via.placeholder.com/600x400.png?text=Debris+Hauling" alt="Debris hauling">
+                    <div class="showcase-overlay">
+                        <h3>Debris Hauling</h3>
+                    </div>
+                </div>
+                <div class="showcase-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://via.placeholder.com/600x400.png?text=Power+Washing" alt="Power washing">
+                    <div class="showcase-overlay">
+                        <h3>Exterior Power Washing</h3>
                     </div>
                 </div>
             </div>
@@ -159,37 +156,21 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to start your project? Contact us today for a free quote</p>
+                <p class="section-subtitle">Ready to discuss your project? Contact us for a free, no-obligation quote.</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info" data-aos="fade-right">
                     <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
                         <h4>Email Us</h4>
                         <p>info@cchendrix.com</p>
                     </div>
                     <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
                         <h4>Call Us</h4>
                         <p>(555) 123-4567</p>
                     </div>
                     <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h4>Location</h4>
-                        <p>Serving Your Area</p>
+                        <h4>Business Hours</h4>
+                        <p>Mon - Fri: 8am - 6pm</p>
                     </div>
                 </div>
                 <div class="contact-form-wrapper" data-aos="fade-left">
@@ -201,10 +182,6 @@
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
                         </div>
                         <div class="form-group">
                             <label for="service">Service Needed</label>
@@ -232,10 +209,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand" data-aos="fade-up">
-                    <div class="logo">
-                        <span class="logo-text">CC<span class="highlight">Hendrix</span></span>
-                    </div>
-                    <p class="footer-description">Professional construction cleanup, hauling, and power washing services.</p>
+                    <div class="logo">CC<span class="highlight">Hendrix</span></div>
+                    <p class="footer-description">Your trusted partner for professional cleanup, hauling, and power washing solutions.</p>
                 </div>
                 <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
                     <h4>Quick Links</h4>
@@ -243,6 +218,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="#showcase">Showcase</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -250,6 +226,10 @@
                     <h4>Contact Info</h4>
                     <p>Email: info@cchendrix.com</p>
                     <p>Phone: (555) 123-4567</p>
+                </div>
+                <div class="footer-contact" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Follow Us</h4>
+                    <p>Social Media Links</p>
                 </div>
             </div>
             <div class="footer-bottom">
