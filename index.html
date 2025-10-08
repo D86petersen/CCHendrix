@@ -3,246 +3,381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CCHendrix - Professional construction cleanup, hauling, and power washing services. Quality service you can trust.">
-    <meta name="keywords" content="construction cleanup, hauling, power washing, CCHendrix">
-    <title>CCHendrix | Construction Cleanup, Hauling & Power Washing</title>
+    <meta name="description" content="CCHendrix - Premier commercial cleaning services. Professional office cleaning, janitorial services, and facility maintenance for businesses.">
+    <meta name="keywords" content="commercial cleaning, office cleaning, janitorial services, business cleaning, facility maintenance">
+    <title>CCHendrix | Premier Commercial Cleaning Services</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <span class="logo-text">CC<span class="highlight">Hendrix</span></span>
-                </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo__accent">CC</span>Hendrix
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">Testimonials</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
                 </ul>
+                <div class="nav__close" id="nav-close">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </div>
             </div>
-        </div>
-    </nav>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-video-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">The Final Clean, Done Right.</h1>
-                <p class="hero-subtitle">Your trusted partner for professional construction cleanup, debris hauling, and high-power pressure washing services. We leave your site spotless and ready.</p>
-                <div class="availability-badge">
-                    <span class="badge-icon">🕐</span>
-                    <span class="badge-text">Available 24/7 • Emergency Services</span>
+    <section class="hero section" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <svg class="hero__badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    <span>Available 24/7</span>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
-                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                <h1 class="hero__title">
+                    Premium Commercial Cleaning
+                    <span class="hero__title-accent">For Your Business</span>
+                </h1>
+                <p class="hero__description">
+                    Professional office cleaning and janitorial services that create healthy, productive workspaces. We deliver excellence with every clean.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#contact" class="button button__primary">
+                        Get Free Quote
+                        <svg class="button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                    <a href="#services" class="button button__secondary">
+                        Our Services
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <h3 class="stat__number">500+</h3>
+                        <p class="stat__label">Happy Clients</p>
+                    </div>
+                    <div class="hero__stat">
+                        <h3 class="stat__number">10+</h3>
+                        <p class="stat__label">Years Experience</p>
+                    </div>
+                    <div class="hero__stat">
+                        <h3 class="stat__number">100%</h3>
+                        <p class="stat__label">Satisfaction Rate</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
+            <div class="hero__image">
+                <div class="hero__blob"></div>
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Commercial Cleaning" class="hero__img">
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section class="services section" id="services">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive solutions for all your construction site needs</p>
+            <div class="section__header">
+                <span class="section__subtitle">What We Offer</span>
+                <h2 class="section__title">Our Cleaning Services</h2>
+                <p class="section__description">
+                    Comprehensive commercial cleaning solutions tailored to your business needs
+                </p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="8" y="24" width="48" height="32" rx="2" stroke="currentColor" stroke-width="3"/>
-                            <path d="M16 24V16C16 12.6863 18.6863 10 22 10H42C45.3137 10 48 12.6863 48 16V24" stroke="currentColor" stroke-width="3"/>
-                            <circle cx="32" cy="40" r="4" fill="currentColor"/>
+
+            <div class="services__container">
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Construction Cleanup</h3>
-                    <p class="service-description">Professional post-construction cleanup services to get your site ready for final inspection and occupancy.</p>
+                    <h3 class="service__title">Office Cleaning</h3>
+                    <p class="service__description">Daily cleaning services for offices, workstations, and common areas. Keep your workplace spotless and professional.</p>
+                    <ul class="service__features">
+                        <li>Desk & surface cleaning</li>
+                        <li>Trash removal</li>
+                        <li>Vacuuming & dusting</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="12" y="28" width="40" height="28" rx="2" stroke="currentColor" stroke-width="3"/>
-                            <circle cx="20" cy="50" r="5" stroke="currentColor" stroke-width="3"/>
-                            <circle cx="44" cy="50" r="5" stroke="currentColor" stroke-width="3"/>
-                            <path d="M52 35H56L60 42V50H56" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                            <path d="M12 38H4V30H12" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+
+                <div class="service__card service__card-featured">
+                    <div class="service__badge">Most Popular</div>
+                    <div class="service__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Hauling Services</h3>
-                    <p class="service-description">Reliable debris removal and hauling services to keep your construction site clean and organized.</p>
+                    <h3 class="service__title">Janitorial Services</h3>
+                    <p class="service__description">Complete janitorial solutions including restrooms, break rooms, and facility maintenance for a healthy environment.</p>
+                    <ul class="service__features">
+                        <li>Restroom sanitization</li>
+                        <li>Floor care & mopping</li>
+                        <li>Supply restocking</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 32L28 24L36 32L44 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20 40L28 32L36 40L44 32" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="3"/>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
                         </svg>
                     </div>
-                    <h3 class="service-title">Power Washing</h3>
-                    <p class="service-description">High-quality pressure washing services to restore surfaces and prepare them for finishing work.</p>
+                    <h3 class="service__title">Deep Cleaning</h3>
+                    <p class="service__description">Intensive deep cleaning services for comprehensive facility maintenance and seasonal cleaning needs.</p>
+                    <ul class="service__features">
+                        <li>Carpet shampooing</li>
+                        <li>Window cleaning</li>
+                        <li>Detail sanitization</li>
+                    </ul>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Floor Care</h3>
+                    <p class="service__description">Professional floor maintenance including buffing, waxing, and carpet care to keep your floors looking pristine.</p>
+                    <ul class="service__features">
+                        <li>Floor buffing & waxing</li>
+                        <li>Carpet cleaning</li>
+                        <li>Tile & grout care</li>
+                    </ul>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">Custom Plans</h3>
+                    <p class="service__description">Flexible cleaning schedules and customized service plans designed specifically for your business requirements.</p>
+                    <ul class="service__features">
+                        <li>Flexible scheduling</li>
+                        <li>Tailored solutions</li>
+                        <li>Scalable services</li>
+                    </ul>
+                </div>
+
+                <div class="service__card">
+                    <div class="service__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service__title">After Hours Service</h3>
+                    <p class="service__description">Convenient after-hours and weekend cleaning to avoid disrupting your business operations during work hours.</p>
+                    <ul class="service__features">
+                        <li>Evening cleaning</li>
+                        <li>Weekend service</li>
+                        <li>24/7 availability</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">About CCHendrix</h2>
-                    <p class="about-description">
-                        At CCHendrix, we pride ourselves on delivering exceptional construction cleanup, hauling, and power washing services. With years of experience in the industry, our team of professionals is dedicated to ensuring your construction site meets the highest standards of cleanliness and safety.
-                    </p>
-                    <p class="about-description">
-                        We understand that every project is unique, which is why we offer customized solutions tailored to your specific needs. From small residential projects to large commercial developments, we have the expertise and equipment to handle jobs of any size.
-                    </p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div class="feature-text">Licensed & Insured</div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div class="feature-text">Experienced Team</div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div class="feature-text">Quality Guaranteed</div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div class="feature-text">Competitive Pricing</div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🕐</div>
-                            <div class="feature-text">24/7 Availability</div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">⚡</div>
-                            <div class="feature-text">Emergency Response</div>
-                        </div>
+    <section class="about section" id="about">
+        <div class="about__container container">
+            <div class="about__image">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80" alt="Our Team" class="about__img">
+                <div class="about__card">
+                    <svg class="about__card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <div>
+                        <h4 class="about__card-title">Certified & Insured</h4>
+                        <p class="about__card-text">Fully licensed professionals</p>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="500" fill="url(#gradient)"/>
-                            <defs>
-                                <linearGradient id="gradient" x1="0" y1="0" x2="400" y2="500">
-                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                    <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
+            </div>
+            
+            <div class="about__content">
+                <span class="section__subtitle">About Us</span>
+                <h2 class="section__title">Why Choose CCHendrix?</h2>
+                <p class="about__description">
+                    With over a decade of experience in commercial cleaning, CCHendrix has become the trusted partner for businesses seeking exceptional cleaning services. Our commitment to quality, reliability, and customer satisfaction sets us apart.
+                </p>
+                
+                <div class="about__features">
+                    <div class="about__feature">
+                        <svg class="about__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
+                        <div>
+                            <h4 class="about__feature-title">Trained Professionals</h4>
+                            <p class="about__feature-text">Experienced and background-checked cleaning staff</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about__feature">
+                        <svg class="about__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <h4 class="about__feature-title">Eco-Friendly Products</h4>
+                            <p class="about__feature-text">Green cleaning solutions that are safe and effective</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about__feature">
+                        <svg class="about__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <h4 class="about__feature-title">Quality Guarantee</h4>
+                            <p class="about__feature-text">100% satisfaction guaranteed or we'll make it right</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about__feature">
+                        <svg class="about__feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div>
+                            <h4 class="about__feature-title">Flexible Scheduling</h4>
+                            <p class="about__feature-text">Custom cleaning plans that fit your business hours</p>
+                        </div>
                     </div>
                 </div>
+
+                <a href="#contact" class="button button__primary">
+                    Schedule Consultation
+                    <svg class="button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Work</h2>
-                <p class="section-subtitle">See the difference our professional services make</p>
+            <div class="section__header">
+                <span class="section__subtitle">Client Reviews</span>
+                <h2 class="section__title">What Our Clients Say</h2>
             </div>
 
-            <!-- Before/After Comparisons -->
-            <div class="before-after-section">
-                <h3 class="subsection-title">Before & After Transformations</h3>
-                <div class="before-after-grid">
-                    <!-- Before/After Image 1 -->
-                    <div class="before-after-item">
-                        <img src="" alt="Before and after construction cleanup">
-                        <p class="comparison-caption">Construction Site Cleanup - Downtown Office Building</p>
+            <div class="testimonials__container">
+                <div class="testimonial__card">
+                    <div class="testimonial__rating">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
                     </div>
-
-                    <!-- Before/After Image 2 -->
-                    <div class="before-after-item">
-                        <img src="/CCHendrix/img/att.6I-vLeZCypbuQEeHWPH_ykL3b2inBfBF4KxMBQ0mZvU.JPG" alt="Before and after power washing">
-                        <p class="comparison-caption">Exterior Power Washing - Commercial Property</p>
-                    </div>
-
-                    <!-- Before/After Image 3 -->
-                    <div class="before-after-item">
-                        <img src="https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Before+%26+After+Hauling" alt="Before and after hauling">
-                        <p class="comparison-caption">Debris Removal - Residential Construction Site</p>
+                    <p class="testimonial__text">
+                        "CCHendrix has transformed our office! Their attention to detail is exceptional, and our employees love coming to a clean workspace every morning."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">JD</div>
+                        <div>
+                            <h4 class="testimonial__name">Jennifer Davis</h4>
+                            <p class="testimonial__position">Office Manager, Tech Solutions Inc.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Work in Progress Gallery -->
-            <div class="work-progress-section">
-                <h3 class="subsection-title">Our Team in Action</h3>
-                <div class="gallery-filter">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="cleanup">Cleanup</button>
-                    <button class="filter-btn" data-filter="hauling">Hauling</button>
-                    <button class="filter-btn" data-filter="washing">Power Washing</button>
+                <div class="testimonial__card">
+                    <div class="testimonial__rating">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial__text">
+                        "Professional, reliable, and thorough. We've been using CCHendrix for 3 years and couldn't be happier with their service. Highly recommended!"
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">MC</div>
+                        <div>
+                            <h4 class="testimonial__name">Michael Chen</h4>
+                            <p class="testimonial__position">Facilities Director, Global Finance</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-category="cleanup">
-                        <img src="/CCHendrix/img/att.Zt-b1YKuWaZ3m6K1OwkaVu6Mkm2I-SZ4qkbh6K1FjJM.JPG">
-                            <h4>Construction Cleanup</h4>
-                            <p>Post-construction debris removal</p>
-                        </div>
+
+                <div class="testimonial__card">
+                    <div class="testimonial__rating">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
                     </div>
-                    <div class="gallery-item" data-category="hauling">
-                        <img src="/CCHendrix/img/att.wI9pOtKlPHto2VBAFRDA7SG0smqJdergiHu8ejf5aC8.JPG" alt="Hauling service in action">
-                        <div class="gallery-overlay">
-                            <h4>Hauling Services</h4>
-                            <p>Heavy debris removal and transport</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="washing">
-                        <img src="/CCHendrix/img/att.Jzja76aASkxC1ekeLrl_66bH7RyS9LScLww3cDL05s0.JPG" alt="Power washing in action">
-                        <div class="gallery-overlay">
-                            <h4>Power Washing</h4>
-                            <p>Professional pressure cleaning</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="cleanup">
-                        <img src="https://via.placeholder.com/400x300/667eea/ffffff?text=Site+Preparation" alt="Site preparation">
-                        <div class="gallery-overlay">
-                            <h4>Site Preparation</h4>
-                            <p>Getting the site ready for occupancy</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="washing">
-                        <img src="https://via.placeholder.com/400x300/06b6d4/ffffff?text=Exterior+Washing" alt="Exterior washing">
-                        <div class="gallery-overlay">
-                            <h4>Exterior Washing</h4>
-                            <p>Building facade restoration</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="hauling">
-                        <img src="https://via.placeholder.com/400x300/8b5cf6/ffffff?text=Debris+Transport" alt="Debris transport">
-                        <div class="gallery-overlay">
-                            <h4>Debris Transport</h4>
-                            <p>Efficient waste management</p>
+                    <p class="testimonial__text">
+                        "Their eco-friendly approach and flexible scheduling make them perfect for our business. The team is always courteous and does an amazing job."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">SR</div>
+                        <div>
+                            <h4 class="testimonial__name">Sarah Rodriguez</h4>
+                            <p class="testimonial__position">CEO, Green Start Co.</p>
                         </div>
                     </div>
                 </div>
@@ -251,106 +386,138 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to start your project? Contact us today for a free quote</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+    <section class="contact section" id="contact">
+        <div class="contact__container container">
+            <div class="contact__content">
+                <span class="section__subtitle">Get In Touch</span>
+                <h2 class="section__title">Request a Free Quote</h2>
+                <p class="contact__description">
+                    Ready to experience professional commercial cleaning? Fill out the form and we'll get back to you within 24 hours.
+                </p>
+
+                <div class="contact__info">
+                    <div class="contact__info-item">
+                        <svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <div>
+                            <h4 class="contact__info-title">Phone</h4>
+                            <p class="contact__info-text">(866) 287-8475</p>
                         </div>
-                        <h4>Email Us</h4>
-                        <p>chendrix@cchendrix.com</p>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+
+                    <div class="contact__info-item">
+                        <svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <div>
+                            <h4 class="contact__info-title">Email</h4>
+                            <p class="contact__info-text">chendrix@cchendrix.com</p>
                         </div>
-                        <h4>Call Us</h4>
-                        <p>(866) 287-8475</p>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+
+                    <div class="contact__info-item">
+                        <svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <div>
+                            <h4 class="contact__info-title">Hours</h4>
+                            <p class="contact__info-text">24/7 Service Available</p>
                         </div>
-                        <h4>Location</h4>
-                        <p>Serving Your Area</p>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Needed</label>
-                            <select id="service" name="service">
-                                <option value="">Select a service</option>
-                                <option value="cleanup">Construction Cleanup</option>
-                                <option value="hauling">Hauling Services</option>
-                                <option value="power-washing">Power Washing</option>
-                                <option value="multiple">Multiple Services</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                    </form>
-                </div>
             </div>
+
+            <form class="contact__form" id="contact-form">
+                <div class="form__group">
+                    <label for="name" class="form__label">Full Name</label>
+                    <input type="text" id="name" name="name" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email Address</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="phone" class="form__label">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form__input">
+                </div>
+
+                <div class="form__group">
+                    <label for="service" class="form__label">Service Type</label>
+                    <select id="service" name="service" class="form__input">
+                        <option value="">Select a service</option>
+                        <option value="office">Office Cleaning</option>
+                        <option value="janitorial">Janitorial Services</option>
+                        <option value="deep">Deep Cleaning</option>
+                        <option value="floor">Floor Care</option>
+                        <option value="custom">Custom Plan</option>
+                    </select>
+                </div>
+
+                <div class="form__group form__group-full">
+                    <label for="message" class="form__label">Message</label>
+                    <textarea id="message" name="message" class="form__input form__textarea" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="button button__primary button__full">
+                    Send Message
+                    <svg class="button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <span class="logo-text">CC<span class="highlight">Hendrix</span></span>
-                    </div>
-                    <p class="footer-description">Professional construction cleanup, hauling, and power washing services.</p>
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <a href="#" class="footer__logo">
+                        <span class="logo__accent">CC</span>Hendrix
+                    </a>
+                    <p class="footer__description">
+                        Professional commercial cleaning services that businesses trust. Creating clean, healthy workspaces since 2015.
+                    </p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__list">
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#services" class="footer__link">Services</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact Info</h4>
-                    <p>Email: chendrix@cchendrix.com</p>
-                    <p>Phone: (866) 287-8475</p>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Services</h4>
+                    <ul class="footer__list">
+                        <li><a href="#services" class="footer__link">Office Cleaning</a></li>
+                        <li><a href="#services" class="footer__link">Janitorial Services</a></li>
+                        <li><a href="#services" class="footer__link">Deep Cleaning</a></li>
+                        <li><a href="#services" class="footer__link">Floor Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Contact</h4>
+                    <ul class="footer__list">
+                        <li class="footer__contact">(866) 287-8475</li>
+                        <li class="footer__contact">chendrix@cchendrix.com</li>
+                        <li class="footer__contact">Available 24/7</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 CCHendrix. All rights reserved.</p>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 CCHendrix. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
@@ -358,3 +525,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+ 

@@ -1,101 +1,293 @@
-// Mobile Menu Toggle
-const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-const navMenu = document.getElementById('navMenu');
+// Mobile Menu Toggle// ===== MOBILE MENU =====// Mobile Menu Toggle
 
-mobileMenuToggle.addEventListener('click', () => {
-    mobileMenuToggle.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
+const navMenu = document.getElementById('nav-menu');
 
-// Close mobile menu when clicking on a link
-const navLinks = document.querySelectorAll('.nav-link');
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        mobileMenuToggle.classList.remove('active');
-        navMenu.classList.remove('active');
+const navToggle = document.getElementById('nav-toggle');const navMenu = document.getElementById('nav-menu');const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+
+const navClose = document.getElementById('nav-close');
+
+const navToggle = document.getElementById('nav-toggle');const navMenu = document.getElementById('navMenu');
+
+// Show menu
+
+if (navToggle) {const navClose = document.getElementById('nav-close');
+
+    navToggle.addEventListener('click', () => {
+
+        navMenu.classList.add('show-menu');mobileMenuToggle.addEventListener('click', () => {
+
     });
-});
 
-// Navbar scroll effect
-const navbar = document.getElementById('navbar');
-let lastScrollY = window.scrollY;
+}// Show menu    mobileMenuToggle.classList.toggle('active');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-});
 
-// Active navigation link based on scroll position
-const sections = document.querySelectorAll('section[id]');
 
-function updateActiveNavLink() {
-    const scrollY = window.pageYOffset;
-    
-    sections.forEach(section => {
-        const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
-        const sectionId = section.getAttribute('id');
-        
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${sectionId}`) {
-                    link.classList.add('active');
-                }
-            });
-        }
-    });
+// Hide menuif (navToggle) {    navMenu.classList.toggle('active');
+
+if (navClose) {
+
+    navClose.addEventListener('click', () => {    navToggle.addEventListener('click', () => {});
+
+        navMenu.classList.remove('show-menu');
+
+    });        navMenu.classList.add('show-menu');
+
 }
 
-window.addEventListener('scroll', updateActiveNavLink);
+    });// Close mobile menu when clicking on a link
 
-// Smooth scroll for navigation links
+// Close menu when clicking a link
+
+const navLinks = document.querySelectorAll('.nav__link');}const navLinks = document.querySelectorAll('.nav-link');
+
 navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
-        if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 70;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
+
+    link.addEventListener('click', () => {navLinks.forEach(link => {
+
+        navMenu.classList.remove('show-menu');
+
+    });// Hide menu    link.addEventListener('click', () => {
+
 });
 
-// Intersection Observer for animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+if (navClose) {        mobileMenuToggle.classList.remove('active');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+// Active link on scroll
+
+const sections = document.querySelectorAll('section[id]');    navClose.addEventListener('click', () => {        navMenu.classList.remove('active');
+
+
+
+function scrollActive() {        navMenu.classList.remove('show-menu');    });
+
+    const scrollY = window.pageYOffset;
+
+    });});
+
+    sections.forEach(current => {
+
+        const sectionHeight = current.offsetHeight;}
+
+        const sectionTop = current.offsetTop - 100;
+
+        const sectionId = current.getAttribute('id');// Navbar scroll effect
+
+        const link = document.querySelector('.nav__link[href*=' + sectionId + ']');
+
+// Close menu when clicking a linkconst navbar = document.getElementById('navbar');
+
+        if (link) {
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {const navLinks = document.querySelectorAll('.nav__link');let lastScrollY = window.scrollY;
+
+                link.classList.add('active-link');
+
+            } else {navLinks.forEach(link => {
+
+                link.classList.remove('active-link');
+
+            }    link.addEventListener('click', () => {window.addEventListener('scroll', () => {
+
         }
-    });
+
+    });        navMenu.classList.remove('show-menu');    if (window.scrollY > 50) {
+
+}
+
+    });        navbar.classList.add('scrolled');
+
+window.addEventListener('scroll', scrollActive);
+
+});    } else {
+
+// Scroll header shadow
+
+function scrollHeader() {        navbar.classList.remove('scrolled');
+
+    const header = document.getElementById('header');
+
+    if (this.scrollY >= 50) {// ===== ACTIVE LINK ON SCROLL =====    }
+
+        header.classList.add('scroll-header');
+
+    } else {const sections = document.querySelectorAll('section[id]');});
+
+        header.classList.remove('scroll-header');
+
+    }
+
+}
+
+function scrollActive() {// Active navigation link based on scroll position
+
+window.addEventListener('scroll', scrollHeader);
+
+    const scrollY = window.pageYOffset;const sections = document.querySelectorAll('section[id]');
+
+// Contact form
+
+const contactForm = document.getElementById('contact-form');
+
+
+
+if (contactForm) {    sections.forEach(current => {function updateActiveNavLink() {
+
+    contactForm.addEventListener('submit', (e) => {
+
+        e.preventDefault();        const sectionHeight = current.offsetHeight;    const scrollY = window.pageYOffset;
+
+        
+
+        const formData = new FormData(contactForm);        const sectionTop = current.offsetTop - 100;    
+
+        const data = Object.fromEntries(formData);
+
+                const sectionId = current.getAttribute('id');    sections.forEach(section => {
+
+        console.log('Form submitted:', data);
+
+                const link = document.querySelector('.nav__link[href*=' + sectionId + ']');        const sectionHeight = section.offsetHeight;
+
+        alert('Thank you for your message! We will get back to you within 24 hours.');
+
+                const sectionTop = section.offsetTop - 100;
+
+        contactForm.reset();
+
+    });        if (link) {        const sectionId = section.getAttribute('id');
+
+}
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {        
+
+// Smooth scroll
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {                link.classList.add('active-link');        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+
+    anchor.addEventListener('click', function (e) {
+
+        e.preventDefault();            } else {            navLinks.forEach(link => {
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        if (target) {                link.classList.remove('active-link');                link.classList.remove('active');
+
+            target.scrollIntoView({
+
+                behavior: 'smooth',            }                if (link.getAttribute('href') === `#${sectionId}`) {
+
+                block: 'start'
+
+            });        }                    link.classList.add('active');
+
+        }
+
+    });    });                }
+
+});
+
+}            });
+
+        }
+
+window.addEventListener('scroll', scrollActive);    });
+
+}
+
+// ===== SCROLL HEADER SHADOW =====
+
+function scrollHeader() {window.addEventListener('scroll', updateActiveNavLink);
+
+    const header = document.getElementById('header');
+
+    if (this.scrollY >= 50) {// Smooth scroll for navigation links
+
+        header.classList.add('scroll-header');navLinks.forEach(link => {
+
+    } else {    link.addEventListener('click', (e) => {
+
+        header.classList.remove('scroll-header');        e.preventDefault();
+
+    }        const targetId = link.getAttribute('href');
+
+}        const targetSection = document.querySelector(targetId);
+
+        
+
+window.addEventListener('scroll', scrollHeader);        if (targetSection) {
+
+            const offsetTop = targetSection.offsetTop - 70;
+
+// ===== CONTACT FORM =====            window.scrollTo({
+
+const contactForm = document.getElementById('contact-form');                top: offsetTop,
+
+                behavior: 'smooth'
+
+if (contactForm) {            });
+
+    contactForm.addEventListener('submit', (e) => {        }
+
+        e.preventDefault();    });
+
+        });
+
+        // Get form data
+
+        const formData = new FormData(contactForm);// Intersection Observer for animations
+
+        const data = Object.fromEntries(formData);const observerOptions = {
+
+            threshold: 0.1,
+
+        // Here you would typically send the data to a server    rootMargin: '0px 0px -50px 0px'
+
+        console.log('Form submitted:', data);};
+
+        
+
+        // Show success message (you can customize this)const observer = new IntersectionObserver((entries) => {
+
+        alert('Thank you for your message! We will get back to you within 24 hours.');    entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+        // Reset form            entry.target.style.opacity = '1';
+
+        contactForm.reset();            entry.target.style.transform = 'translateY(0)';
+
+    });        }
+
+}    });
+
 }, observerOptions);
 
-// Observe service cards and other elements
-document.querySelectorAll('.service-card, .info-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
+// ===== SMOOTH SCROLL =====
 
-// Contact Form Handling
-const contactForm = document.getElementById('contactForm');
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {// Observe service cards and other elements
 
-contactForm.addEventListener('submit', (e) => {
+    anchor.addEventListener('click', function (e) {document.querySelectorAll('.service-card, .info-card').forEach(el => {
+
+        e.preventDefault();    el.style.opacity = '0';
+
+        const target = document.querySelector(this.getAttribute('href'));    el.style.transform = 'translateY(30px)';
+
+        if (target) {    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+
+            target.scrollIntoView({    observer.observe(el);
+
+                behavior: 'smooth',});
+
+                block: 'start'
+
+            });// Contact Form Handling
+
+        }const contactForm = document.getElementById('contactForm');
+
+    });
+
+});contactForm.addEventListener('submit', (e) => {
+
     e.preventDefault();
     
     // Get form data
