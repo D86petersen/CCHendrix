@@ -2,7 +2,7 @@
 // Initialize EmailJS with your public key
 // Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key from your dashboard
 (function() {
-    emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS public key
+    emailjs.init('TCwfyc6wqQ333PSFl'); // Replace with your EmailJS public key
 })();
 
 // ===== MOBILE MENU =====
@@ -104,8 +104,8 @@ if (contactForm) {
         // EmailJS send function
         // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs from EmailJS dashboard
         emailjs.sendForm(
-            'YOUR_SERVICE_ID',     // Replace with your EmailJS service ID
-            'YOUR_TEMPLATE_ID',    // Replace with your EmailJS template ID
+            'service_ms41rio',     // Replace with your EmailJS service ID
+            'template_gpnv2bo',    // Replace with your EmailJS template ID
             contactForm
         )
         .then(function(response) {
